@@ -3,8 +3,6 @@ on:
   push:
     branches:
       - dev
-      - feature/*
-      - bugfix/*
 jobs:
   build:
 
