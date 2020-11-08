@@ -1,0 +1,30 @@
+.logo {
+  height: 113px;
+  width: 116px;
+  margin-left: 85px;
+}
+
+.title-text {
+  font-family: 'Arial Bold', 'Arial Regular', 'Arial', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 26px;
+  color: #fc9e08;
+  margin: 35px;
+}
+
+.navbar {
+  background-color: rgb(85, 85, 85);
+}
+
+.under-navbar {
+  font-size: 92px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: #a5425e;
+
+  .alter-text {
+    color: #FC9E08;
+  }
+}
