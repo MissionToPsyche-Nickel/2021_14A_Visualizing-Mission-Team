@@ -1,6 +1,5 @@
 .logo {
-  height: 113px;
-  width: 116px;
+  width: 85px;
   margin-left: 85px;
 }
 
@@ -10,7 +9,7 @@
   font-style: normal;
   font-size: 26px;
   color: #fc9e08;
-  margin: 35px;
+  margin-left: 30px;
 }
 
 .navbar {
@@ -27,4 +26,8 @@
   .alter-text {
     color: #FC9E08;
   }
+}
+
+.mat-button {
+  min-width: unset !important;
 }
