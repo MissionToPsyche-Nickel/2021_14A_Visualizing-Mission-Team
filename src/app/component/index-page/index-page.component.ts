@@ -1,5 +1,4 @@
-import { element } from 'protractor'
-import { Component, ElementRef, HostListener, OnInit } from '@angular/core'
+import { Component, OnInit } from '@angular/core'
 import {
   trigger,
   style,
