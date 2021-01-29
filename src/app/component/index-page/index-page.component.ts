@@ -48,6 +48,7 @@ export class IndexPageComponent implements OnInit {
       this.audio.muted = false
       try {
         this.audio.play()
+        this.alreadyPlaying = true;
       } catch (err) {
         if (err === DOMException) {
         }
