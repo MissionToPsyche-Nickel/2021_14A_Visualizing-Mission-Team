@@ -31,11 +31,11 @@ import {
   ]
 })
 export class IndexPageComponent implements OnInit {
-  audio = new Audio('assets/audio/bgm.mp3')
-  alreadyPlaying = false
+  audio = new Audio('assets/audio/bgm.mp3');
+  alreadyPlaying = false;
 
   constructor() {
-    this.audio.load()
+    this.audio.load();
   }
 
   ngOnInit(): void {}
@@ -43,11 +43,11 @@ export class IndexPageComponent implements OnInit {
   onMouseMove(ev: MouseEvent) {
     ev.preventDefault()
     if (!this.alreadyPlaying) {
-      this.audio.autoplay = true
-      this.audio.volume = 0.5
-      this.audio.muted = false
+      this.audio.autoplay = true;
+      this.audio.volume = 0.3;
+      this.audio.muted = false;
       try {
-        this.audio.play()
+        this.audio.play();
         this.alreadyPlaying = true;
       } catch (err) {
         if (err === DOMException) {
