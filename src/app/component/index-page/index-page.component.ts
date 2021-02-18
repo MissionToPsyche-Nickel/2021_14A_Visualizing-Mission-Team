@@ -33,26 +33,31 @@ import {
 export class IndexPageComponent implements OnInit {
   audio = new Audio('assets/audio/bgm.mp3');
   alreadyPlaying = false;
+  ifBlocked = true;
+  ifMute = false;
 
   constructor() {
     this.audio.load();
   }
-
   ngOnInit(): void {}
 
   onMouseMove(ev: MouseEvent) {
-    ev.preventDefault()
+    ev.preventDefault();
     if (!this.alreadyPlaying) {
       this.audio.autoplay = true;
       this.audio.volume = 0.3;
-      this.audio.muted = false;
-      try {
-        this.audio.play();
-        this.alreadyPlaying = true;
-      } catch (err) {
-        if (err === DOMException) {
-        }
+      var promise = this.audio.play();
+      
+      if (promise !== undefined) {
+        promise.then(_ => {
+          this.ifBlocked = false;
+          this.alreadyPlaying = true;
+          this.audio.muted = this.ifMute;
+        }).catch(error => {
+          this.ifBlocked = true;
+        })
       }
+      
     }
   }
 }
