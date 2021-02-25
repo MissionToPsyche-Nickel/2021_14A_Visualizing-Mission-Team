@@ -33,8 +33,6 @@ import {
 export class IndexPageComponent implements OnInit {
   audio = new Audio('assets/audio/bgm.mp3');
   alreadyPlaying = false;
-  ifBlocked = true;
-  ifMute = false;
 
   constructor() {
     this.audio.load();
@@ -50,11 +48,9 @@ export class IndexPageComponent implements OnInit {
       
       if (promise !== undefined) {
         promise.then(_ => {
-          this.ifBlocked = false;
           this.alreadyPlaying = true;
-          this.audio.muted = this.ifMute;
+          this.audio.muted = false;
         }).catch(error => {
-          this.ifBlocked = true;
         })
       }
       
