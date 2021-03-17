@@ -7,6 +7,7 @@ import {
   query,
   stagger
 } from '@angular/animations'
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-index-page',
@@ -34,10 +35,17 @@ export class IndexPageComponent implements OnInit {
   audio = new Audio('assets/audio/bgm.mp3');
   alreadyPlaying = false;
 
-  constructor() {
+  constructor(private router: Router) {
     this.audio.load();
   }
   ngOnInit(): void {}
+
+  ngOnDestroy(): void {
+    if (this.audio) {
+      this.audio.pause();
+      this.audio = null;
+    }
+  }
 
   onMouseMove(ev: MouseEvent) {
     ev.preventDefault();
@@ -53,7 +61,6 @@ export class IndexPageComponent implements OnInit {
         }).catch(error => {
         })
       }
-      
     }
   }
 }

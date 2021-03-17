@@ -7,12 +7,16 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { IndexPageComponent } from '../app/component/index-page/index-page.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { StatsComponent } from './component/stats/stats.component';
+import { NavbarComponentComponent } from './component/navbar-component/navbar-component.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    IndexPageComponent
+    IndexPageComponent,
+    StatsComponent,
+    NavbarComponentComponent
   ],
   imports: [
     BrowserModule,
