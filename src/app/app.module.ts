@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,6 +10,7 @@ import { IndexPageComponent } from '../app/component/index-page/index-page.compo
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { StatsComponent } from './component/stats/stats.component';
 import { NavbarComponentComponent } from './component/navbar-component/navbar-component.component';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 
 @NgModule({
@@ -23,7 +25,9 @@ import { NavbarComponentComponent } from './component/navbar-component/navbar-co
     AppRoutingModule,
     BrowserAnimationsModule,
     NgbModule,
-    MatButtonModule
+    MatButtonModule,
+    MatSnackBarModule,
+    MDBBootstrapModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

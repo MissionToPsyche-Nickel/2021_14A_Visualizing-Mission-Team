@@ -1,21 +1,21 @@
 import { NgModule } from '@angular/core';
-import { IndexPageComponent } from '../app/component/index-page/index-page.component'
-import { StatsComponent } from '../app/component/stats/stats.component'
+import { IndexPageComponent } from '../app/component/index-page/index-page.component';
+import { StatsComponent } from '../app/component/stats/stats.component';
 import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {
     path: '',
-    component: IndexPageComponent
+    component: IndexPageComponent,
   },
   {
     path: 'stats',
-    component: StatsComponent
-  }
+    component: StatsComponent,
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
