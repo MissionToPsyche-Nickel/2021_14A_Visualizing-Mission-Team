@@ -18,7 +18,7 @@ export class StatsComponent implements OnInit {
 
   public chartType: string = 'pie';
 
-  public chartData: Array<Number> = [
+  private chartData: Array<Number> = [
     15,
     30,
     3,
@@ -109,9 +109,9 @@ export class StatsComponent implements OnInit {
     responsive: true,
   };
 
-  public getColor() {
+  private getColor(): Array<string> {
     var backgroundColorArr: Array<string> = [];
-    var baseColorCode: Array<string> = [
+    const baseColorCode: Array<string> = [
       '#FC9E08',
       '#F05A66',
       '#A5425E',
@@ -125,8 +125,8 @@ export class StatsComponent implements OnInit {
   }
 
   public chartClicked(e: any): void {
-    var index = e.active[0]._index;
-    var fullDescription: string = this.chartDesc[index];
+    const index = e.active[0]._index;
+    const fullDescription: string = this.chartDesc[index];
     this.bottomPopUp(
       `${fullDescription} (${this.Chart.getPointDataAtEvent(e)})`
     );
