@@ -20,7 +20,7 @@ import { Router } from '@angular/router';
     trigger('fade', [
       transition(':enter', [
         query(
-          '.list-item, .p',
+          '.list-item, .div',
           [
             style({ opacity: 0 }),
             stagger(1000, [animate(2000, style({ opacity: 1 }))])
