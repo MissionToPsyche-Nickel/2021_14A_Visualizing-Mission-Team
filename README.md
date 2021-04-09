@@ -4,6 +4,8 @@ Project repository for ASU CSE 485 Capstone project.
 # For devs
 Please do not directly push your code to `dev` branch, use a new branch to make your change, and create Pull Request for reviewing.
 
+Source code is at the `dev` branch, the `master` branch is for auto build tools to produce the website.
+
 # Set up the environment
 Clone this repository: 
 ```
