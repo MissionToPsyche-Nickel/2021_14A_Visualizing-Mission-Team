@@ -1,0 +1,50 @@
+.page {
+  background-color: black;
+  background-image: url("../../../assets/images/meteorite.png");
+  background-position: -20% -500%;
+  background-repeat: no-repeat;
+  background-size: 900px 800px;
+  min-height: 90vh;
+  overflow-y: hidden;
+}
+
+.logo {
+  width: 200px;
+  height: 200px;
+}
+
+.white-lg {
+  color: #f2f2f2;
+  font-size: 55px;
+  font-weight: 400;
+  line-height: normal;
+  z-index: 999;
+}
+
+.white-md {
+  color: #f2f2f2;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: normal;
+  z-index: 999;
+}
+
+.marked-text {
+  color: rgb(240, 90, 102);
+}
+
+.mat-raised-button {
+  background-color: rgb(240, 90, 102);
+  color: white;
+  font-size: 36px;
+  font-weight: 300;
+  height: 4rem;
+}
+
+::ng-deep .mat-checkbox-inner-container {
+  background-color: white !important;
+}
+
+.interaction {
+  margin-top: 15rem;
+}
