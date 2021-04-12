@@ -1,11 +1,15 @@
 .page {
   background-color: black;
+  min-height: 100vh !important;
+}
+
+.background-asteroid {
   background-image: url("../../../assets/images/meteorite.png");
-  background-position: -20% -500%;
   background-repeat: no-repeat;
-  background-size: 900px 800px;
-  min-height: 90vh;
-  overflow-y: hidden;
+  background-attachment: fixed;
+  background-size: 900px 600px;
+  background-position: left 80%;
+  min-height: 100vh !important;
 }
 
 .logo {
@@ -19,6 +23,9 @@
   font-weight: 400;
   line-height: normal;
   z-index: 999;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  // This may won't work on IE browser.
+  -webkit-font-smoothing: antialiased;
 }
 
 .white-md {
@@ -27,6 +34,9 @@
   font-weight: 400;
   line-height: normal;
   z-index: 999;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  // This may won't work on IE browser.
+  -webkit-font-smoothing: antialiased;
 }
 
 .marked-text {

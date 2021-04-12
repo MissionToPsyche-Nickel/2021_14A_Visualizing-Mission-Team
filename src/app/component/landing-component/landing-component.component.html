@@ -1,25 +1,24 @@
-<app-navbar-component></app-navbar-component>
-<div class="page align-items-center">
-  <img class="logo" src="assets/images/logo2.png" />
-  <div class="white-lg mt-5">
-    Welcome to NASA <span class="marked-text"> Psyche</span>
-  </div>
-  <div class="white-md">
-    Visualizing Mission <span class="marked-text">Teams</span> and
-    <span class="marked-text">Technologies</span>
-  </div>
-  <div class="interaction">
-    <div class="p-2">
-      <button mat-raised-button (click)="goToMainPage()">
-        Learn About Psyche
-      </button>
+<div class="page">
+  <div class="background-asteroid align-items-center">
+    <app-navbar-component></app-navbar-component>
+    <img class="logo" src="assets/images/logo2.png" />
+    <div class="white-lg mt-5">
+      Welcome to NASA <span class="marked-text"> Psyche</span>
     </div>
-    <div class="p-2 white-md">
-      Enable sound
-      <mat-checkbox (change)="changeMute()">(Recommended)</mat-checkbox>
+    <div class="white-md">
+      Visualizing Mission <span class="marked-text">Teams</span> and
+      <span class="marked-text">Technologies</span>
     </div>
-  </div>
-  <div class="footer">
-    <br />
+    <div class="interaction">
+      <div class="p-2">
+        <button mat-raised-button (click)="goToMainPage()">
+          Learn About Psyche
+        </button>
+      </div>
+      <div class="p-2 white-md">
+        Enable sound
+        <mat-checkbox (change)="changeMute()">(Recommended)</mat-checkbox>
+      </div>
+    </div>
   </div>
 </div>
