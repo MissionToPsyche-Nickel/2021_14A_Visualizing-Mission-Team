@@ -15,14 +15,17 @@ export class LandingComponentComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {}
 
+  // When checkbox status is changed, reverse the boolean variable.
   changeMute() {
     this.ifMuted = !this.ifMuted;
   }
 
+  // Redirect to the index page.
   goToMainPage() {
     this.router.navigate(['index']);
   }
 
+  // Assign user choice to take effect.
   ngOnDestroy() {
     this.userSetting.ifMuted = this.ifMuted;
   }

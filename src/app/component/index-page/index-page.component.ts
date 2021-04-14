@@ -50,6 +50,7 @@ export class IndexPageComponent implements OnInit {
     this.audio.volume = 0.3;
     if (!this.ifMute) {
       var promise = this.audio.play();
+      // Chrome will block autoplay, code below will suppress the console output.
       if (promise !== undefined) {
         promise
           .then((_) => {
@@ -62,6 +63,7 @@ export class IndexPageComponent implements OnInit {
   }
 
   ngOnDestroy(): void {
+    // Mute the sound when not on index page.
     if (this.audio) {
       this.audio.pause();
       this.audio = null;

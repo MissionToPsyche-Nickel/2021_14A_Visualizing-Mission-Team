@@ -18,6 +18,7 @@ export class StatsComponent implements OnInit {
 
   public chartType: string = 'pie';
 
+  // Chart data, from first to bottom.
   private chartData: Array<Number> = [
     15,
     30,
@@ -49,6 +50,7 @@ export class StatsComponent implements OnInit {
     },
   ];
 
+  // Legend labels.
   public chartLabels: Array<string> = [
     'APL',
     'ASU',
@@ -73,6 +75,7 @@ export class StatsComponent implements OnInit {
     'B.H.P',
   ];
 
+  // Description will be displayed as a snackbar.
   public chartDesc: Array<any> = [
     'Applied Physics Laboratory',
     'Arizona State University',
@@ -97,6 +100,7 @@ export class StatsComponent implements OnInit {
     'Brad Hendron Photography',
   ];
 
+  // Get color from color arraylist.
   public chartColors: Array<any> = [
     {
       backgroundColor: this.getColor(),
@@ -105,6 +109,7 @@ export class StatsComponent implements OnInit {
     },
   ];
 
+  // Make chart graph responsive.
   public chartOptions: any = {
     responsive: true,
   };
@@ -124,7 +129,9 @@ export class StatsComponent implements OnInit {
     return backgroundColorArr;
   }
 
+  // When pie region is clicked, popup the snackbar.
   public chartClicked(e: any): void {
+    // Get which pie graph is clicked
     const index = e.active[0]._index;
     const fullDescription: string = this.chartDesc[index];
     this.bottomPopUp(

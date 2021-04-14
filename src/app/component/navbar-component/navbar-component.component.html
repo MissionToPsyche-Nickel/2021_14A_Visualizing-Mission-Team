@@ -1,31 +1,37 @@
 <nav class="navbar navbar-expand-lg navbar-light">
-    <div class="navbar-brand navbar-header">
-      <img class="logo" src="assets/images/logo.png" (click)="goToHomePage()" />
+  <div class="navbar-brand navbar-header">
+    <img class="logo" src="assets/images/logo.png" (click)="goToHomePage()" />
+  </div>
+  <button
+    mat-button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"> </span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="navbar-nav mr-auto">
+      <button mat-button class="nav-item title-text navbar-text">
+        The Team
+      </button>
+      <button mat-button class="nav-item title-text navbar-text">
+        The Technology
+      </button>
+      <button
+        mat-button
+        class="nav-item title-text navbar-text"
+        (click)="goToStatPage()"
+      >
+        Stats
+      </button>
+      <button mat-button class="nav-item title-text navbar-text">
+        Something Else
+      </button>
     </div>
-    <button
-      mat-button
-      class="navbar-toggler"
-      type="button"
-      data-toggle="collapse"
-      data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"> </span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <div class="navbar-nav mr-auto">
-        <button mat-button class="nav-item title-text navbar-text">
-          The Team
-        </button>
-        <button mat-button class="nav-item title-text navbar-text">
-          The Technology
-        </button>
-        <button mat-button class="nav-item title-text navbar-text" (click)="goToStatPage()">Stats</button>
-        <button mat-button class="nav-item title-text navbar-text">
-          Something Else
-        </button>
-      </div>
-    </div>
-  </nav>
+  </div>
+</nav>
