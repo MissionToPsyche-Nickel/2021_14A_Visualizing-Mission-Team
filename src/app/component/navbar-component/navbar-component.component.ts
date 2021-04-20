@@ -15,6 +15,10 @@ export class NavbarComponentComponent implements OnInit {
     this.router.navigate(['stats']);
   }
 
+  goToTeamPage() {
+    this.router.navigate(['team']);
+  }
+
   goToHomePage() {
     this.router.navigate(['']);
   }

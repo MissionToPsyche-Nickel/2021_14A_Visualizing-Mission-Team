@@ -1,0 +1,28 @@
+<mat-card class="info-card flex-center">
+  <img
+    mat-card-image
+    class="info-image card-img"
+    *ngIf="info.image"
+    [src]="info.image"
+  />
+  <mat-card-content>
+    <p class="card-text">
+      {{ info.description === undefined ? "" : info.description }}
+    </p>
+    <p class="copyright-text">
+      <mat-icon class="copyright-icon copyright-section" aria-hidden="false"
+        >copyright</mat-icon
+      >
+      <button
+        mat-button
+        *ngIf="info.copyright"
+        (click)="goToUrl(info.copyright)"
+        class="link-text"
+        onclick="this.blur()"
+      >
+        Link
+      </button>
+      <span class="p-2" *ngIf="!info.copyright">Psyche</span>
+    </p>
+  </mat-card-content>
+</mat-card>

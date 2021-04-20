@@ -3,6 +3,7 @@ import { IndexPageComponent } from '../app/component/index-page/index-page.compo
 import { StatsComponent } from '../app/component/stats/stats.component';
 import { Routes, RouterModule } from '@angular/router';
 import { LandingComponentComponent } from './component/landing-component/landing-component.component';
+import { TeamPageComponent } from './component/team-page/team-page.component';
 
 const routes: Routes = [
   {
@@ -17,6 +18,10 @@ const routes: Routes = [
     path: 'stats',
     component: StatsComponent,
   },
+  {
+    path: 'team',
+    component: TeamPageComponent
+  }
 ];
 
 @NgModule({
