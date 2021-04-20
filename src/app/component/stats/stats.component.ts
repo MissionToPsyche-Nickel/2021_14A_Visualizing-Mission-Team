@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { BaseChartDirective } from 'angular-bootstrap-md';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
@@ -8,10 +8,16 @@ import { Router } from '@angular/router';
   templateUrl: './stats.component.html',
   styleUrls: ['./stats.component.scss'],
 })
-export class StatsComponent implements OnInit {
+export class StatsComponent implements OnInit, OnDestroy {
   constructor(private _snackbar: MatSnackBar, private router: Router) {}
 
   ngOnInit(): void {}
+
+  ngOnDestroy(): void {
+    if (this._snackbar) {
+      this._snackbar.dismiss();
+    }
+  }
 
   @ViewChild(BaseChartDirective)
   private Chart: BaseChartDirective;
