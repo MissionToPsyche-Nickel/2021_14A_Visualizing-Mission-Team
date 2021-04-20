@@ -1,0 +1,13 @@
+<div class="page">
+    <app-navbar-component></app-navbar-component>
+    <div class="container" (contextmenu)="onRightClick($event)">
+      <div class="row">
+        <div class="p-2 d-flex flex-row flex-wrap align-items-stretch">
+          <div class="col" *ngFor="let info of infos">
+            <app-card [info]="info"></app-card>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

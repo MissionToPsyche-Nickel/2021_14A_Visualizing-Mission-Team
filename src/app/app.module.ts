@@ -18,6 +18,7 @@ import { LandingComponentComponent } from './component/landing-component/landing
 import { UserSetting } from './component/data/userSetting';
 import { TeamPageComponent } from './component/team-page/team-page.component';
 import { CardComponent } from './component/cards/card/card.component';
+import { TechnologyPageComponent } from './component/technology-page/technology-page.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { CardComponent } from './component/cards/card/card.component';
     LandingComponentComponent,
     TeamPageComponent,
     CardComponent,
+    TechnologyPageComponent,
   ],
   imports: [
     BrowserModule,

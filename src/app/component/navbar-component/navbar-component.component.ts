@@ -22,4 +22,8 @@ export class NavbarComponentComponent implements OnInit {
   goToHomePage() {
     this.router.navigate(['']);
   }
+
+  goToTechPage() {
+    this.router.navigate(['technology']);
+  }
 }
