@@ -1,15 +1,16 @@
 .page {
   background-color: black;
-}
-
-.background-asteroid {
+  min-height: 100vh;
   background-image: url("../../../assets/images/lp_bg.png");
-  background-size: cover;
 }
 
 .logo {
   width: 200px;
   height: 200px;
+}
+
+.psyche-button {
+  width: auto;
 }
 
 .white-lg {
@@ -54,4 +55,11 @@
 
 .interaction {
   margin-top: 15rem;
+}
+
+@media (max-width: 550px) {
+  .psyche-button {
+    width: 250px;
+    font-size: 25px;
+  }
 }

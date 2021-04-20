@@ -34,4 +34,9 @@ export class TeamPageComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+
+  // Disable right click on team page.
+  onRightClick(event: any) {
+    event.preventDefault()
+  }
 }
