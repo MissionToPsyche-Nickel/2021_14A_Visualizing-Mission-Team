@@ -6,6 +6,12 @@ Please do not directly push your code to `dev` branch, use a new branch to make 
 
 Source code is at the `dev` branch, the `master` branch is for auto build tools to produce the website.
 
+# Prerequisites
+
+* Install the newest `Node.js`
+* Install the `Angular CLI` using following command: `npm install -g @angular/cli`
+* More detailed set up tutorial can be found [here](https://angular.io/guide/setup-local)
+
 # Set up the environment
 Clone this repository: 
 ```
