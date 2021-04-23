@@ -42,7 +42,8 @@ export class IndexPageComponent implements OnInit {
 
   ngOnInit(): void {
     if (this.userSetting.ifMuted === undefined) {
-      this.ifMute = true;
+      this.router.navigate(['']);
+      return;
     } else {
       this.ifMute = this.userSetting.ifMuted;
     }
