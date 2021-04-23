@@ -8,7 +8,7 @@ import {
   stagger,
 } from '@angular/animations';
 import { Router } from '@angular/router';
-import { UserSetting } from '../data/userSetting';
+import { UserSetting } from '../../data/userSetting';
 
 @Component({
   selector: 'app-index-page',

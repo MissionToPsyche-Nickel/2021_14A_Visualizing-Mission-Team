@@ -9,16 +9,16 @@ import { MatCardModule } from '@angular/material/card';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { IndexPageComponent } from '../app/component/index-page/index-page.component';
+import { IndexPageComponent } from './component/main/index-page/index-page.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { StatsComponent } from './component/stats/stats.component';
-import { NavbarComponentComponent } from './component/navbar-component/navbar-component.component';
+import { StatsComponent } from './component/main/stats/stats.component';
+import { NavbarComponentComponent } from './component/util/navbar-component/navbar-component.component';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
-import { LandingComponentComponent } from './component/landing-component/landing-component.component';
+import { LandingComponentComponent } from './component/main/landing-component/landing-component.component';
 import { UserSetting } from './component/data/userSetting';
-import { TeamPageComponent } from './component/team-page/team-page.component';
+import { TeamPageComponent } from './component/main/team-page/team-page.component';
 import { CardComponent } from './component/cards/card/card.component';
-import { TechnologyPageComponent } from './component/technology-page/technology-page.component';
+import { TechnologyPageComponent } from './component/main/technology-page/technology-page.component';
 
 @NgModule({
   declarations: [

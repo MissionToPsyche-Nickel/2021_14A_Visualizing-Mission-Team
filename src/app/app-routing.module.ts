@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
-import { IndexPageComponent } from '../app/component/index-page/index-page.component';
-import { StatsComponent } from '../app/component/stats/stats.component';
+import { IndexPageComponent } from './component/main/index-page/index-page.component';
+import { StatsComponent } from './component/main/stats/stats.component';
 import { Routes, RouterModule } from '@angular/router';
-import { LandingComponentComponent } from './component/landing-component/landing-component.component';
-import { TeamPageComponent } from './component/team-page/team-page.component';
-import { TechnologyPageComponent } from './component/technology-page/technology-page.component';
+import { LandingComponentComponent } from './component/main/landing-component/landing-component.component';
+import { TeamPageComponent } from './component/main/team-page/team-page.component';
+import { TechnologyPageComponent } from './component/main/technology-page/technology-page.component';
 
 const routes: Routes = [
   {

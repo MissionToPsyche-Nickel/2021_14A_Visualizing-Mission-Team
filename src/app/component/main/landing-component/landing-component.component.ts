@@ -1,6 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { UserSetting } from '../data/userSetting';
+import { UserSetting } from '../../data/userSetting';
 
 @Component({
   selector: 'app-landing-component',
