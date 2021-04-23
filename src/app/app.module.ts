@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatDialogModule } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
@@ -17,8 +18,9 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { LandingComponentComponent } from './component/main/landing-component/landing-component.component';
 import { UserSetting } from './component/data/userSetting';
 import { TeamPageComponent } from './component/main/team-page/team-page.component';
-import { CardComponent } from './component/util/cards/card/card.component';
+import { CardComponent } from './component/util/card/card.component';
 import { TechnologyPageComponent } from './component/main/technology-page/technology-page.component';
+import { DisclaimerDialogComponent } from './component/util/disclaimer-dialog/disclaimer-dialog.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +32,7 @@ import { TechnologyPageComponent } from './component/main/technology-page/techno
     TeamPageComponent,
     CardComponent,
     TechnologyPageComponent,
+    DisclaimerDialogComponent,
   ],
   imports: [
     BrowserModule,
@@ -41,6 +44,7 @@ import { TechnologyPageComponent } from './component/main/technology-page/techno
     MatCheckboxModule,
     MatCardModule,
     MatIconModule,
+    MatDialogModule,
     MDBBootstrapModule.forRoot(),
   ],
   providers: [UserSetting],

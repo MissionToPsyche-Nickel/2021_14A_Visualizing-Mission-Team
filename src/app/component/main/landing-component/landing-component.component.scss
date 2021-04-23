@@ -13,8 +13,9 @@
   width: auto;
 }
 
-.disclaimer {
-  color: yellow;
+.stroke {
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
 .white-lg {
@@ -23,8 +24,6 @@
   font-weight: 400;
   line-height: normal;
   z-index: 999;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-    1px 1px 0 #000;
   // This may won't work on IE browser.
   -webkit-font-smoothing: antialiased;
 }
@@ -35,8 +34,6 @@
   font-weight: 400;
   line-height: normal;
   z-index: 999;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-    1px 1px 0 #000;
   // This may won't work on IE browser.
   -webkit-font-smoothing: antialiased;
 }
