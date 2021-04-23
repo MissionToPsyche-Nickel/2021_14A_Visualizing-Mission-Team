@@ -18,14 +18,16 @@
         >
           Learn About Psyche
         </button>
-      </div>
-      <div class="disclaimer btn-link">
-        <a (click)="disclaimerClick()">Disclaimer</a>
+        <div class="p-2 white-md">
+          Enable sound
+          <mat-checkbox (change)="changeMute()">(Recommended)</mat-checkbox>
+        </div>
+        <div class="disclaimer btn-link">
+          <a (click)="disclaimerClick()">Disclaimer</a>
+        </div>
       </div>
     </div>
+    <br />
+    <footer class="text-dark stroke overflow-auto text-center footer"></footer>
   </div>
-  <br />
-  <footer class="text-dark stroke overflow-auto text-center footer">
-    
-  </footer>
 </div>
