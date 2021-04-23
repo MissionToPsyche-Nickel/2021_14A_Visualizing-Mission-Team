@@ -17,7 +17,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { LandingComponentComponent } from './component/main/landing-component/landing-component.component';
 import { UserSetting } from './component/data/userSetting';
 import { TeamPageComponent } from './component/main/team-page/team-page.component';
-import { CardComponent } from './component/cards/card/card.component';
+import { CardComponent } from './component/util/cards/card/card.component';
 import { TechnologyPageComponent } from './component/main/technology-page/technology-page.component';
 
 @NgModule({
