@@ -1,5 +1,7 @@
 # Introduction
-Project repository for ASU CSE 485 Capstone project.
+![Screenshot](./src/assets/doc/screenshot.png)
+
+Welcome to the project repository for ASU CSE 485 Capstone project.
 
 # For devs
 Please do not directly push your code to `dev` branch, use a new branch to make your change, and create Pull Request for reviewing.
