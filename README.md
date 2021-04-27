@@ -3,6 +3,8 @@
 
 Welcome to the project repository for ASU CSE 485 Capstone project.
 
+If the website is built using GitHub, the URL for accessing the website will always be: https://{github_username}.github.io/{repo_name}/
+
 # For devs
 Please do not directly push your code to `dev` branch, use a new branch to make your change, and create Pull Request for reviewing.
 
